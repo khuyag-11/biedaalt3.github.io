@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab2</title>
+	<style>
+		.mySlides {display: none;}
+
+	</style>
+</head>
+<body>
+	<table border="1" style="border-radius: 5px;">
+		<tr>
+			<td style="width: 15%; background:blue;"><img src="num.jpg" width="100px" height="100px"></td>
+			<td colspan="3" style="background: blue; color: white;"><h1>National University of Mongolia</td>
+			
+		</tr>
+		<tr>
+			<td colspan="4" style="background: #0373fc; padding: 10px; text-align: center; ">Эрдмийн хэт цахилвааы Хөгжлийн гал бадармой</td>
+		</tr>
+		<tr style="background: #0af062">
+			<td>Цэс
+				<li><a href="https://www.num.edu.mn/">Нүүр хуудас</a></li>
+				<li><a href="https://elselt.num.edu.mn/">Элсэлт</a></li>
+				<li><a href="https://news.num.edu.mn/">Мэдээ</a></li>
+				<li><a href="https://www.num.edu.mn/researchmon">Судалгаа, Хамтын ажиллагаа</a></li>
+			</td>
+			<td style="width: 20%"><div style="position: relative;">
+				<img class="mySlides" src="num1.jpg" width=100% height="200px">
+				<img class="mySlides" src="seas.jpg" width=100% height="200px">
+
+			</div></td>
+			<td style="width: 40%"><div style="position: relative; height: 30px; background: #6df702; font-size: 30px; text-align: center;">Мэдээлэл</div>
+			<h3>МУИС-ийн оюутны 1,2,3,5-р дотуур байрны 1100 оюутанд хийсэн шинжилгээний хариу сөрөг гарлаа</h3>
+МУИС -ийн оюутны 1,2,3,5-р дотуур байранд амьдарч байгаа 1100 оюутнуудыг “Ковид-19”-ийн хамар залгиурын болон өндөг цусны түргэвчилсэн  шинжилгээнд хамруулах ажлыг БШУЯ, ЭМЯ, ЭМХТ, СБД дэх МХХэлтэс, МУИС хамтран өнөөдөр /2020.12.07/ зохион байгууллаа. Уг шинжилгээнд: 
+
+Оюутны 1-р байр /255 оюутан, 8 ажилтан албан хаагч/
+Оюутны 2-р байр /267 оюутан, 11 ажилтан, албан хаагч/
+Оюутны 3-р байр /308 оюутан, 7 ажилтан, албан хаагч/
+Оюутны 5-р байр /270 оюутан, 10 ажилтан, албан хаагч/,  нийт 1100 оюутан, 36 ажилтан, албан хаагч хамрагдаж шинжилгэөни хариу бүгд сөрөг гарсан байна.</td>
+			
+			<td style="width: 20%">Салбар сургуулиуд
+				<li><a href="http://sas.num.edu.mn/">ШУС</a></li>
+				<li><a href="http://seas.num.edu.mn/">ХШУИС</a></li>
+				<li><a href="http://sirpa.num.edu.mn/">ОУХНУС</a></li>
+				<li><a href="http://law.num.edu.mn/">ХЗС</a></li>
+				<li><a href="http://za.num.edu.mn/">ЗС</a></li>
+				<li><a href="http://erdenet.num.edu.mn/">ЭС</a></li>
+				<li><a href="http://bs.num.edu.mn/">БС</a></li>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4" style="background: #6cd4c4; ">Бүх эрх хуулиан хамгаалагдсан</td>
+		</tr>
+	</table>
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
